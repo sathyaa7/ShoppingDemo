@@ -40,7 +40,7 @@ public class SeleniumTest {
         actions.click(fitnessEquipment).perform();
         WebElement sortBy = driver.findElement(By.cssSelector("#sorter"));
         Select select = new Select(sortBy);
-        System.out.println("Options available in sorter are" + Arrays.toString(select.getOptions().stream().map(option -> option.getText()).toArray()));
+        System.out.println("Options available in sorter are   " + Arrays.toString(select.getOptions().stream().map(option -> option.getText()).toArray()));
         select.selectByValue("price");
         ((JavascriptExecutor) driver).executeScript("scroll(0,100)");
         driver.findElement(By.xpath("//a[contains(@href,\"sprite-yoga-companion\")]")).click();
