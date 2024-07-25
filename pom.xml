@@ -42,7 +42,8 @@
                             **/*.java
                         </include>
                     </includes>
-
+                    <parallel>methods</parallel>
+                    <threadCount>4</threadCount>
                 </configuration>
             </plugin>
             <plugin>
